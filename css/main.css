@@ -258,6 +258,7 @@ h3 {
     letter-spacing: 0.06em;
     margin-bottom: 30px;
     text-transform: uppercase;
+    background-image: url("../images/imgheader.jpg");
 }
 
 .hero-button {
