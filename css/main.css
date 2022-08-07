@@ -211,6 +211,11 @@ h3 {
 .header-link-tel :focus {
     color: var(--accent-color);
 }
+.icon-header-mail {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
 
 
 .logo-footer {
@@ -242,12 +247,41 @@ h3 {
 .tel:focus {
     color: var(--accent-color);
 }
+.icon-header-smartphone::before {
+    display: block;
+    height: 16px;
+    width: 161px;
+    background-size: 16px 12px;
+    background-image: url("../images/smartphone.svg");
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+        background-color: #ffff;
+}
+.icon-header-envelope::before {
+    display: block;
+    height: 16px;
+    width: 142px;
+    background-size: 10px 16px;
+    background-image: url("../images/envelope.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    background-color: #ffff;
+}
+/* <svg class="icon-header-mail" width="16" height="12"><use href="./images/symbol-defs/svg#envelope(hover)"></use></svg>info@devstudio.com </a>*/
+
+
 .hero {
     padding-right: 15px;
     padding-top: 200px;
     padding-bottom: 200px;
     background-color: var(--grey-color);
     text-align: center;
+    background-image: url("../images/headerimg.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
 }
 
 .hero-title {
@@ -258,7 +292,27 @@ h3 {
     letter-spacing: 0.06em;
     margin-bottom: 30px;
     text-transform: uppercase;
+    /*background-image: url("../images/imgheader.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain ;*/
 }
+
+
+.background-hero {
+
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to top,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/headerimg.jpg);
+    background-repeat: no-repeat;
+    }
+
+
 
 .hero-button {
     padding: 10px 32px;
@@ -327,11 +381,21 @@ h3 {
     margin-right: 30px;
 }
 
-.special-item {
+.special-item::before {
     /*margin-bottom: 10px;*/
+    display: block;
+    content: "";
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+    
 }
 .special-subtitle {
     margin-bottom: 10px;
+    margin-top: 30px;
     font-weight: 700;
     font-size: 14px;
     line-height: 24px;
@@ -341,12 +405,34 @@ h3 {
 }
 
 .special-text {
+    margin-top: 30px;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
         color: var(--main-text-color);
 }
 
+/* карты чем мы занимаемся*/
+.card antenna {
+    height: 120px;
+    background-color: #F5F4FA;
+    }
+.icon-antenna::before {
+   background-size: 70px;
+   background-image: url("../images/antenna1.svg");
+}
+.icon-clock::before {
+    background-size: 70px;
+    background-image: url("../images/clock1.svg");
+}
+.icon-diagram::before {
+    background-size: 70px;
+    background-image: url("../images/diagram1.svg");
+}
+.icon-astronaut::before {
+    background-size: 70px;
+    background-image: url("../images/astronaut1.svg");
+}
 /* Чем мы занимаемся */
 
 .galery {
@@ -450,7 +536,76 @@ h3 {
     box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.12);
     text-align: center;
 }
+/*Постоянные клиенты*/
+.clients-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    margin-bottom: 50px;
+}
+.company {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
+.icon-clients:not(:last-child) {
+    margin-right: 30px;
+}
+
+.pict {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+}
+.card-clients {
+    display: flex;
+    content: "";
+    width: 170px;
+    height: 92px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    
+}
+.icon-client1 {
+    background-size: 106px 60px;
+        background-image: url("../images/client1.svg");
+        border-radius: 1px;
+            border-color: #AFB1B8;
+}
+
+.icon-client2 {
+    background-size: 106px 60px;
+    background-image: url("../images/client2.svg");
+}
+
+.icon-client3 {
+    background-size: 106px 60px;
+    background-image: url("../images/client3.svg");
+}
+
+.icon-client4 {
+    background-size: 106px 60px;
+    background-image: url("../images/client4.svg");
+}
+
+.icon-client5 {
+    background-size: 106px 60px;
+    background-image: url("../images/client5.svg");
+}
+
+.icon-client6 {
+    background-size: 106px 60px;
+    background-image: url("../images/client6.svg");
+}
 /* Footer */
 .footer {
     
