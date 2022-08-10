@@ -177,6 +177,7 @@ h3 {
 }
 
 .header-item {
+    align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -194,6 +195,7 @@ h3 {
 
 .header-link-mail,
 .header-link-tel {
+    display: inline-block;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -215,8 +217,15 @@ h3 {
     margin-right: 10px;
     fill: currentColor;
 }
+.icon-header-smartphone {
+    
+    background-position: center;
 
-
+}
+.icon-header-envelope {
+    
+    background-position: center;
+}
 
 .logo-footer {
     display: inline-flex;
@@ -253,10 +262,10 @@ h3 {
     width: 161px;
     background-size: 16px 12px;
     background-image: url("../images/smartphone.svg");
-        background-repeat: no-repeat;
-        background-position: right;
-        background-size: contain;
-        background-color: #ffff;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    background-color: #ffff;
 }
 .icon-header-envelope::before {
     display: block;
@@ -269,9 +278,6 @@ h3 {
     background-size: contain;
     background-color: #ffff;
 }
-/* <svg class="icon-header-mail" width="16" height="12"><use href="./images/symbol-defs/svg#envelope(hover)"></use></svg>info@devstudio.com </a>*/
-
-
 .hero {
     padding-right: 15px;
     padding-top: 200px;
